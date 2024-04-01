@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+<head>
+    <meta charset="UTF-8"><!--Character set declaration-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--responsive meta tag-->
+    <title>Ryley's website</title><!--Title of the web page-->
+    <link rel="stylesheet" href="2style.css"><!--linking the external CSS file-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="home.html"><img src="/Users/ryleytruman/Desktop/Hot-Beans-web-dev.png" class="sub-logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about2.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="qual.html">Qualifications</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+
+<!-- contact page -->
+
+<section class="location">
+    <div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d429174.8231282403!2d-96.73155255!3d32.82066454999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c19f77b45974b%3A0xb9ec9ba4f647678f!2sDallas%2C%20TX!5e0!3m2!1sen!2sus!4v1704215022046!5m2!1sen!2sus" width="600" height="450" style="border: 0;" allowfullscreen="" loading="Lazy"></iframe>
+    </div>
+</section>
+
+<section>
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5>123445677</h5>
+                    <p>Monday to Friday, 9am - 5pm</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-home"></i>
+                <span>
+                    <h5>XYZ Road, ABC Building</h5>
+                    <p>Dallas, Texas, TX</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <span>
+                    <h5>Email: Hotbeans@Hotbeans.com</h5>
+                    <p>Email any questions</p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-col">
+
+        <form action="formhandler.php" method="post">
+            <input type="text" name="name" placeholder="Enter your name" required>
+            <input type="email" name="email" placeholder="Enter email address" required>
+            <input type="text" name="subject" placeholder="Enter your subject" required>
+            <textarea rows="8" name="message" placeholder="Message" required></textarea>
+            <button type="submit" class="hero-btn red-btn">Send Message
+            </button>
+        </form>
+
+        </div>
+    </div>
+    
+</section>
+
+
+
+
+<!-- footer -->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>HotBeans is a leading provider of tech training and web development services.
+    <br> Learn more about our mission, services, and team on our main About page.<p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-youtube"></i>
+    </div>  
+    <p>Made with <i class="fa fa-heart"></i> by Ryley Truman</p>  
+</section>
+
+<!-----JavaScript for Toggle Menu----->
+<script>
+
+var navLinks = document.getElementById("navLinks");
+
+function openMenu(){
+    navLinks.style.right = "0";
+}
+function hideMenu(){
+    navLinks.style.right = "-200px";
+}
+
+</script>
+
+</body>
+</html>

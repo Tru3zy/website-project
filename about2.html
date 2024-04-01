@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+<head>
+    <meta charset="UTF-8"><!--Character set declaration-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--responsive meta tag-->
+    <title>Ryley's website</title><!--Title of the web page-->
+    <link rel="stylesheet" href="2style.css"><!--linking the external CSS file-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="home.html"><img src="/Users/ryleytruman/Desktop/Hot-Beans-web-dev.png" class="sub-logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about2.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="qual.html">Qualifications</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+<!-- about us content -->
+
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>About HotBeans</h1>
+            <p>This is HotBeans, your gateway to a world of opportunities in the digital landscape! At HotBeans, we're passionate about empowering individuals
+            to unlock their potential and embark on rewarding careers in the tech industry.
+            </p>
+            <h2>Our Mission</h2>
+            <p>At HotBeans, our mission is simple: to bridge the gap between talent and opportunity.
+             We believe that everyone deserves the chance to pursue their dreams and build a successful career in technology. Through our comprehensive training programs and personalized mentorship,
+             we empower individuals to learn valuable skills and thrive in the ever-evolving digital 
+             landscape.</p>
+             
+             <h2>Our Services</h2>
+             <p>At HotBeans, we provide beginner friendly courses and have more advanced courses
+                to cater to more seaasoned workers in the industry.</p>
+            <a href="courses.html" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+            <img src="/Users/ryleytruman/Desktop/images1/about.jpg">
+        </div>
+        </div>
+</section>
+
+
+
+
+<!-- footer -->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>HotBeans is a leading provider of tech training and web development services.
+     <br> Learn more about our mission, services, and team on our main About page.<p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-youtube"></i>
+    </div>  
+    <p>Made with <i class="fa fa-heart"></i> by Ryley Truman</p>  
+</section>
+
+<!-----JavaScript for Toggle Menu----->
+<script>
+
+var navLinks = document.getElementById("navLinks");
+
+function openMenu(){
+    navLinks.style.right = "0";
+}
+function hideMenu(){
+    navLinks.style.right = "-200px";
+}
+
+</script>
+
+</body>
+</html>

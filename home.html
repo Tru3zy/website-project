@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+<head>
+    <meta charset="UTF-8"><!--Character set declaration-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--responsive meta tag-->
+    <title>Ryley's website</title><!--Title of the web page-->
+    <link rel="stylesheet" href="2style.css"><!--linking the external CSS file-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="home.html"><img src="/Users/ryleytruman/Desktop/Hot-Beans-web-dev.png" class="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about2.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="qual.html">Qualifications</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="openMenu()"></i>
+        </nav>
+<div class="text-box">
+    <h1>Hot Beans web</h1>
+    <p>
+        Welcome to Hot Beans! <br>We recruit web developers of a varied skill range.<br> We create high level website for all types of businesses.
+    </p>
+    <a href="about2.html" class="hero-btn">Visit us to know More</a>
+</div>
+    </section>
+
+
+<!--- courses ---->
+
+<section class="course">
+    <h1>Courses we offer</h1>
+    <p> We offer courses to anyone who wants to learn or improve the skills we provide.</p>
+
+<div class="row">
+    <div class="course-col">
+        <h3>Intermediate</h3>
+        <p>If you are an intermediate-level that is more experienced 
+        then what we can provide in our school leaver course then we have a course for you.
+         <br>
+        HotBeans offers advanced tech training courses designed to challenge and inspire experienced learners like you. Whether you're seeking to advance your career, expand your knowledge, or explore new technologies,
+         our courses are designed to meet your needs and exceed your expectations.</p>
+    </div>
+<div class="course-col">
+    <h3>Degree</h3>
+    <p>Empower your career and stay ahead in the fast-paced tech industry with HotBeans' 
+        advanced tech courses tailored for professionals like you. <br >Our comprehensive programs offer 
+        advanced training and specialized knowledge in key areas of technology and innovation, 
+        designed to elevate your skills and propel your career to new heights.</p>
+</div>
+<div class="course-col">
+    <h3>School Leavers</h3>
+    <p>Are you a recent school leaver eager to dive into the exciting world of technology? <br>
+        HotBeans offers specialized tech training courses designed to kickstart your career 
+        journey and equip you with the essential skills needed to thrive in the digital age.<br>
+        Our courses are carefully crafted with school leavers in mind, providing a supportive and nurturing environment where you can explore your passion for technology and unleash your creative potential. Whether you dream of building websites, developing mobile apps,
+        or delving into digital marketing strategies, HotBeans has the perfect course for you.</p>
+</div>
+
+
+</section>
+
+<!-- campus -->
+
+<section class="campus">
+    <h1>Our Global Organisation</h1>
+    <p>We have a global organisation, <br> where we hire people across the world to work at our facilities</p>
+    <div class="row">
+        <div class="campus-col">
+            <img src="/Users/ryleytruman/Desktop/images1/london.png">
+            <div class="layer">
+                <h3>LONDON</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="/Users/ryleytruman/Desktop/images1/newyork.png">
+            <div class="layer">
+                <h3>NEW YORK</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="/Users/ryleytruman/Desktop/images1/washington.png">
+            <div class="layer">
+                <h3>WASHINGTON</h3>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- call to action -->
+
+<section class="cta">
+    <h1> Enroll For Our Various Online Courses <br> Anywhere From The World</h1>
+    <a href="contact.html" class="hero-btn">CONTACT US</a>
+
+</section>
+
+<!-- footer -->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>HotBeans is a leading provider of tech training and web development services.
+    <br> Learn more about our mission, services, and team on our main About page.<p>
+    <div class="icons">
+       <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-youtube"></i></a>
+    </div>  
+    <p>Made with <i class="fa fa-heart"></i> by Ryley Truman</p>  
+</section>
+
+<!-----JavaScript for Toggle Menu----->
+<script>
+
+var navLinks = document.getElementById("navLinks");
+
+function openMenu(){
+    navLinks.style.right = "0";
+}
+function hideMenu(){
+    navLinks.style.right = "-200px";
+}
+
+</script>
+
+</body>
+</html>
